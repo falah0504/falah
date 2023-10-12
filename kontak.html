@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="form.html" class="a-navbar">Sign In</a>
+        <a href="kontak.html" class="a-navbar">Kontak</a>
+        <a href="katalog.html" class="a-navbar">Katalog Produk</a>
+        <a href="tentang.html" class="a-navbar">Tentang Kami</a>
+        <a href="index.html" class="a-navbar">Beranda</a>
+    </div>
+    </div>
+    <div class="profil-container" id="kontak">
+        <div class="profil-text">
+            <section class="contact-info">
+                <h1>INFORMASI KONTAK</h1>
+                <p>Email: <a href="mailto:info@domain.com">info@domain.com</a></p>
+                <p>Telepon: +1234567890</p>
+                <p>Alamat: Jalan Contoh No. 123, Kota Contoh</p>
+            </section>
+            <section class="contact-form">
+                <h2>Hubungi Kami</h2>
+                <form action="#" method="post">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required><br>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+        
+                    <label for="message">Pesan:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        
+                    <input type="submit" value="Kirim">
+                </form>
+            </section>        
+        </div>
+    </div>
+    <div id="contact">
+        <div class="footer">
+            <div class="footer-section">
+                <h3>STORE BEY</h3>
+                <p>Desa Salakbrojo Kedungwuni Pekalongan - Indonesia</p>
+            </div>
+            <div  class="footer-section">
+                <h3>Payment</h3>
+                <p>Tunai</p>
+                <p>Transfer Bank</p>
+                <p>E-wallet</p>
+            </div>
+            <div class="footer-section">
+                <h3>Online Store</h3>
+                <p>Shopee : STORE BEY</p>
+                <p>Lazada : STORE BEY</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                 <p>Facebook : Sarung Wajada </p>
+                 <p>Instagram : sarungwajada.official </p>
+                 <p>Youtube : - </p>
+            </div>
+        </div>
+    <div class="footer">
+        &copy; 2023 Fajrul Falah. 
+    </div>
+    <div class="scroll-to-top">
+        <a href="#kontak">
+            <div class="arrow-container">
+                <img src="OIP-removebg-preview.png" alt="Scroll to Top">
+            </div>
+        </a>
+    </div>
+    
+    
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const scrollTopButton = document.querySelector('.scroll-to-top');
+    
+            if (scrollY > 200) {
+                scrollTopButton.style.opacity = '1';
+            } else {
+                scrollTopButton.style.opacity = '0';
+            }
+        });
+    </script>
+</body>
+</html
