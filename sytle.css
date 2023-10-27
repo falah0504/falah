@@ -1,194 +1,202 @@
-
 .navbar {
-    text-align: center;
-    background-color: indianred;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-    z-index: 2; /* Tambahkan ini */
+  text-align: center;
+  background-color: indianred;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* Tambahkan ini */
 }
 
 .navbar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-    background-color: antiquewhite;
-    color: black;
-    transition: .5s ease-in-out;
-    transition-delay: .3s;
-    border-radius: 8px;
+  background-color: antiquewhite;
+  color: black;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.3s;
+  border-radius: 8px;
 }
 
 /* CSS untuk Profil */
 .profil-container {
-    text-align: center;
-    display: flex; /* Mengatur tampilan elemen dalam mode flex */
-    align-items: center; /* Mengatur agar elemen berada di tengah vertikal */
-    padding: 40px;
-    color: white;
-    
-    position: relative; /* Tambahkan ini */
-    z-index: 1; /* Tambahkan ini */
+  text-align: center;
+  display: flex; /* Mengatur tampilan elemen dalam mode flex */
+  align-items: center; /* Mengatur agar elemen berada di tengah vertikal */
+  padding: 40px;
+  color: black;
+  position: relative; /* Tambahkan ini */
+  z-index: 1; /* Tambahkan ini */
 }
 
-
-
 .profil-text {
-    flex: 1; /* Elemen profil-text akan mengambil sisa ruang yang tersedia */
+  flex: 1; /* Elemen profil-text akan mengambil sisa ruang yang tersedia */
+  color: #fff;
 }
 
 .profil-text h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .profil-text p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .profil-image {
-    flex: 1; /* Elemen profil-image akan mengambil sisa ruang yang tersedia */
-    text-align: center; /* Pusatkan gambar secara horizontal */
+  flex: 1; /* Elemen profil-image akan mengambil sisa ruang yang tersedia */
+  text-align: center; /* Pusatkan gambar secara horizontal */
 }
 
 .profil-image img {
-    width: 300px; /* Pastikan gambar tidak melebihi lebar kontainer */
-    height: auto; /* Biarkan tinggi gambar menyesuaikan */
-    border-radius:0%;
-    margin-left: 200px;
+  width: 300px; /* Pastikan gambar tidak melebihi lebar kontainer */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan */
+  border-radius: 0%;
+  margin-left: 10px;
 }
 #contact {
-    background: indianred;
-    padding: 50px 0px 50px 0px;
-    margin-top: 15%;
-  }
-  .contact-info, .contact-form {
-    margin: 30px;
-    padding: 30px;
-    border: 1px solid white;
+  background: indianred;
+  padding: 50px 0px 50px 0px;
+  margin-top: 15%;
+}
+.contact-info,
+.contact-form {
+  margin: 30px;
+  padding: 30px;
+  border: 1px solid white;
 }
 
-.contact-info h2, .contact-form h2 {
-    color: #333;
+.contact-info h2,
+.contact-form h2 {
+  color: #333;
 }
 
-.contact-form label, .contact-form textarea, .contact-form input[type="text"], .contact-form input[type="email"] {
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 5px;
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
 }
 
 .contact-form textarea {
-    height: 150px;
+  height: 150px;
 }
 
 .contact-form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-  .footer {
-    color: white;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
-  }
-  
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  flex: 0 0 25%; /* Setiap bagian footer akan memiliki lebar 25% */
+}
+
+@media (max-width: 768px) {
   .footer-section {
-    width: 20%;
-    margin: 0 auto;
+    flex: 0 0 50%; /* Pada layar berukuran kecil, setiap bagian footer akan memiliki lebar 50% */
   }
-body{
- background-color: black;
+}
+
+@media (max-width: 576px) {
+  .footer-section {
+    flex: 0 0 100%; /* Pada layar sangat kecil, setiap bagian footer akan mengambil seluruh lebar */
+  }
+}
+body {
+  background-color: black;
 }
 .tutor-list {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .kartu-tutor {
-    width: 20%;
-    margin: 0 auto;
-    transform: scale(1);
+  width: 40%; /* Sesuaikan ukuran sesuai kebutuhan */
+  margin: 10px; /* Sesuaikan margin sesuai kebutuhan */
+  text-align: center;
 }
+
 .kartu-tutor:hover,
 .kartu-partner:hover {
-    transform: scale(1.2);
-    transition: .2s;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 
-
-
 .kartu-tutor img {
-    width: 80%;
-    border-radius: 0%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Atur sesuai kebutuhan */
 }
 
 .kartu-tutor {
-    font-style: inherit;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    text-align: center;
-    color: white;
+  font-style: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  color: white;
 }
 
 .partner-list {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .kartu-parner {
-    width: 20%;
-    margin: 0 auto;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .kartu-parner img {
-    width: 150px;
-    border-radius: 50%;
+  width: 150px;
+  border-radius: 50%;
 }
 .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 .arrow-container {
-    width: 40px;
-    height: 40px;
-    background-color: antiquewhite; 
-    border-radius: 50%; 
-    justify-content: center;
-    align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 .scroll-to-top a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .scroll-to-top img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .scroll-to-top a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
