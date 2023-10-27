@@ -1,163 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Saya</title>
-    <link rel="stylesheet" href="sytle.css">
-</head>
-<body>
-    <div class="navbar">
-        <a href="form.html" class="a-navbar">Sign In</a>
-        <a href="kontak.html" class="a-navbar">Kontak</a>
-        <a href="katalog.html" class="a-navbar">Katalog Produk</a>
-        <a href="tentang.html" class="a-navbar">Tentang Kami</a>
-        <a href="index.html" class="a-navbar">Beranda</a>
-    </div>
-    <div class="profil-container" id="beranda">
-        <div class="profil-text">
+    <link rel="stylesheet" href="sytle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-indianred sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">STORE BEY</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog.html">Katalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-4">
+          <div class="profil-text">
             <h1>PROFIL SAYA</h1>
-            <p>Selamat datang di toko sarung [STORE BEY]
-                <br>
-                Kami adalah penjual yang berdedikasi untuk memberikan Anda koleksi sarung berkualitas tinggi dengan desain yang elegan dan menarik. Dengan pengalaman bertahun-tahun dalam industri tekstil, kami memastikan setiap produk yang kami tawarkan memiliki standar kualitas yang tinggi dan desain yang unik.</p>
+            <p>
+              Selamat datang di toko sarung [STORE BEY]
+              <br />
+              Kami adalah penjual yang berdedikasi untuk memberikan Anda koleksi
+              sarung berkualitas tinggi dengan desain yang elegan dan menarik.
+              Dengan pengalaman bertahun-tahun dalam industri tekstil, kami
+              memastikan setiap produk yang kami tawarkan memiliki standar
+              kualitas yang tinggi dan desain yang unik.
+            </p>
+          </div>
         </div>
-        <div class="profil-image">
-            <img src="WhatsApp Image 2023-09-29 at 08.48.17.png" alt="Gambar Profil Anda">
+        <div class="col-md-6 text-center">
+          <div class="profil-image">
+            <img
+              src="WhatsApp Image 2023-09-29 at 08.48.17.png"
+              alt="Gambar Profil Anda"
+              class="img-fluid"
+              style="max-width: 100%"
+            />
+          </div>
         </div>
+      </div>
     </div>
+
     <div class="profil-container" id="tentang">
-        <div class="profil-text">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="profil-text">
             <h1>TENTANG KAMI</h1>
-            <p>[STORE BEY]
-                <br>
-                Selamat datang di [STORE BEY], tempat di mana keindahan dan tradisi bertemu dalam setiap helai sarung. Kami adalah kelompok individu yang berbagi cinta mendalam terhadap kerajinan tekstil dan keinginan untuk menghadirkan sentuhan keindahan ke dalam hidup Anda melalui sarung.</p>
+            <p>[STORE BEY]</p>
+            <p>
+              Selamat datang di [STORE BEY], tempat di mana keindahan dan
+              tradisi bertemu dalam setiap helai sarung. Kami adalah kelompok
+              individu yang berbagi cinta mendalam terhadap kerajinan tekstil
+              dan keinginan untuk menghadirkan sentuhan keindahan ke dalam hidup
+              Anda melalui sarung.
+            </p>
+          </div>
         </div>
-        <div class="profil-image">
-            <img src="WhatsApp Image 2023-09-29 at 19.24.52.jpeg" alt="Gambar Tentang Kami">
+        <div class="col-md-6">
+          <div class="profil-image text-center">
+            <img
+              src="WhatsApp Image 2023-09-29 at 19.24.52.jpeg"
+              alt="Gambar Tentang Kami"
+              class="img-fluid"
+            />
+          </div>
         </div>
+      </div>
     </div>
-    <div class="profil-container" id="layanan">
-        <div class="profil-text">
-            <h1>KATALOG PRODUK</h1>
-        </div>
-    </div>
-<section id="tutors">
-    <div class="kolom">
+
+    <section id="tutors">
+      <div class="kolom">
         <div class="tutor-list">
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.13.54.jpeg"/>    
-                <p>Gerbang Aceh Hitam</p>  
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.09.jpeg"/>
-                <p>Palaikat Navy</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.08.jpeg"/>     
-                <p>Candi Coklat Susu</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.09 (2).jpeg"/>
-                <p>Brunai Hitam</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.08 (2).jpeg"/>   
-                <p>Palaikat Hitam</p>     
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.08 (1).jpeg"/>
-                <p>Candi Hitam</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.09 (1).jpeg"/>
-                <p>Etnik Simpel Hitam</p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.10.16.jpeg"/>   
-                <p>Gerbang Hijau</p>   
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.10.jpeg"/>
-                <p>Etnik Simpel Navy </p>
-            </div>
-            <div class="kartu-tutor">
-                <img src="WhatsApp Image 2023-10-07 at 21.29.09 (3).jpeg"/>
-                <p>Brunai Hijau</p>
-            </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.13.54.jpeg" />
+            <p>Gerbang Aceh Hitam</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.09.jpeg" />
+            <p>Palaikat Navy</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.08.jpeg" />
+            <p>Candi Coklat Susu</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.09 (2).jpeg" />
+            <p>Brunai Hitam</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.08 (2).jpeg" />
+            <p>Palaikat Hitam</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.08 (1).jpeg" />
+            <p>Candi Hitam</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.09 (1).jpeg" />
+            <p>Etnik Simpel Hitam</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.10.16.jpeg" />
+            <p>Gerbang Hijau</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.10.jpeg" />
+            <p>Etnik Simpel Navy</p>
+          </div>
+          <div class="kartu-tutor">
+            <img src="WhatsApp Image 2023-10-07 at 21.29.09 (3).jpeg" />
+            <p>Brunai Hijau</p>
+          </div>
         </div>
-    </div>
-</section>
-<br>
-<div class="profil-container" id="kontak">
-    <div class="profil-text">
+      </div>
+    </section>
+    <br />
+    <div class="profil-container" id="kontak">
+      <div class="profil-text">
         <section class="contact-info">
-            <h1>INFORMASI KONTAK</h1>
-            <p>Email: <a href="mailto:info@domain.com">azkafalah285@gmail.com</a></p>
-            <p>Telepon: 085838931956</p>
-            <p>Alamat: Salakbrojo, Kedungwuni, Pekalongan</p>
+          <h1>INFORMASI KONTAK</h1>
+          <p>
+            Email: <a href="mailto:info@domain.com">azkafalah285@gmail.com</a>
+          </p>
+          <p>Telepon: 085838931956</p>
+          <p>Alamat: Salakbrojo, Kedungwuni, Pekalongan</p>
         </section>
         <section class="contact-form">
-            <h2>Hubungi Kami</h2>
-            <form action="#" method="post">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required><br>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-    
-                <label for="message">Pesan:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-    
-                <input type="submit" value="Kirim">
-            </form>
-        </section>        
+          <h2>Hubungi Kami</h2>
+          <form action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="message">Pesan:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br />
+
+            <input type="submit" value="Kirim" />
+          </form>
+        </section>
+      </div>
     </div>
-</div>
     <div id="contact">
-        <div class="footer">
-            <div class="footer-section">
-                <h3>STORE BEY</h3>
-                <p>Desa Salakbrojo Kedungwuni Pekalongan - Indonesia</p>
-            </div>
-            <div  class="footer-section">
-                <h3>Payment</h3>
-                <p>Tunai</p>
-                <p>Transfer Bank</p>
-                <p>E-wallet</p>
-            </div>
-            <div class="footer-section">
-                <h3>Online Store</h3>
-                <p>Shopee : STORE BEY</p>
-                <p>Lazada : STORE BEY</p>
-            </div>
-            <div class="footer-section">
-                <h3>Social Media</h3>
-                 <p>Facebook : Sarung Wajada </p>
-                 <p>Instagram : sarungwajada.official </p>
-                 <p>Youtube : - </p>
-            </div>
+      <div class="footer">
+        <div class="footer-section">
+          <h3>STORE BEY</h3>
+          <p>Desa Salakbrojo Kedungwuni Pekalongan - Indonesia</p>
         </div>
-    <div class="footer">
-        &copy; 2023 Fajrul Falah. 
+        <div class="footer-section">
+          <h3>Payment</h3>
+          <p>Tunai</p>
+          <p>Transfer Bank</p>
+          <p>E-wallet</p>
+        </div>
+        <div class="footer-section">
+          <h3>Online Store</h3>
+          <p>Shopee : STORE BEY</p>
+          <p>Lazada : STORE BEY</p>
+        </div>
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <p>Facebook : Sarung Wajada</p>
+          <p>Instagram : sarungwajada.official</p>
+          <p>Youtube : -</p>
+        </div>
+        <div class="footer-section">
+          <h3>Google Maps</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.799562304712!2d109.65504968463289!3d-6.9561380388091445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7023d86a1c2993%3A0x6b4cab89c9b425c2!2sSalakbrojo%2C%20Kec.%20Kedungwuni%2C%20Kabupaten%20Pekalongan%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1698086229470!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer">&copy; 2023 Fajrul Falah.</div>
     </div>
     <div class="scroll-to-top">
-        <a href="#beranda">
-            <div class="arrow-container">
-                <img src="OIP-removebg-preview.png" alt="Scroll to Top">
-            </div>
-        </a>
+      <a href="#beranda">
+        <div class="arrow-container">
+          <img src="OIP-removebg-preview.png" alt="Scroll to Top" />
+        </div>
+      </a>
     </div>
     <script>
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const scrollTopButton = document.querySelector('.scroll-to-top');
-    
-            if (scrollY > 200) {
-                scrollTopButton.style.opacity = '1';
-            } else {
-                scrollTopButton.style.opacity = '0';
-            }
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const scrollTopButton = document.querySelector(".scroll-to-top");
+
+        if (scrollY > 200) {
+          scrollTopButton.style.opacity = "1";
+        } else {
+          scrollTopButton.style.opacity = "0";
+        }
+      });
+      document.querySelector(".scroll-to-top").addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
+      });
     </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
